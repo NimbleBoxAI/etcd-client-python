@@ -1,0 +1,32 @@
+
+<h2>EtcdserverpbPutRequest</h2>
+<ul class="parameter">
+  <li class="param-required-false">ignore_lease : Boolean
+    <br/>If ignore_lease is set, etcd updates the key using its current lease. Returns an error if the key does not exist.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ignore_value : Boolean
+    <br/>If ignore_value is set, etcd updates the key using its current value. Returns an error if the key does not exist.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">key : byte[]
+    <br/>key is the key, in bytes, to put into the key-value store.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">lease : String
+    <br/>lease is the lease ID to associate with the key in the key-value store. A lease value of 0 indicates no lease.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">prev_kv : Boolean
+    <br/>If prev_kv is set, etcd gets the previous key-value pair before changing it. The previous key-value pair will be returned in the put response.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">value : byte[]
+    <br/>value is the value, in bytes, to associate with the key in the key-value store.
+  </li>
+</ul>

@@ -1,0 +1,17 @@
+
+<h2>EtcdserverpbTxnRequest</h2>
+<ul class="parameter">
+  <li class="param-required-false">compare : List
+    <br/>compare is a list of predicates representing a conjunction of terms. If the comparisons succeed, then the success requests will be processed in order, and the response will contain their respective responses in order. If the comparisons fail, then the failure requests will be processed in order, and the response will contain their respective responses in order.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">failure : List
+    <br/>failure is a list of requests which will be applied when compare evaluates to false.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">success : List
+    <br/>success is a list of requests which will be applied when compare evaluates to true.
+  </li>
+</ul>

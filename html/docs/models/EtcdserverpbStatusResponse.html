@@ -1,0 +1,52 @@
+
+<h2>EtcdserverpbStatusResponse</h2>
+<ul class="parameter">
+  <li class="param-required-false">dbSize : String
+    <br/>dbSize is the size of the backend database physically allocated, in bytes, of the responding member.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">dbSizeInUse : String
+    <br/>dbSizeInUse is the size of the backend database logically in use, in bytes, of the responding member.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">errors : List
+    <br/>errors contains alarm/health information and status.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">header : etcdserverpbResponseHeader
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">isLearner : Boolean
+    <br/>isLearner indicates if the member is raft learner.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">leader : String
+    <br/>leader is the member ID which the responding member believes is the current leader.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">raftAppliedIndex : String
+    <br/>raftAppliedIndex is the current raft applied index of the responding member.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">raftIndex : String
+    <br/>raftIndex is the current raft committed index of the responding member.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">raftTerm : String
+    <br/>raftTerm is the current raft term of the responding member.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">version : String
+    <br/>version is the cluster protocol version used by the responding member.
+  </li>
+</ul>

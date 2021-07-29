@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="assets/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+  <script src="assets/js/main.js" type="text/javascript"></script>
+
+  <title>REST API Resources</title>
+</head>
+<body>
+  <div class="header">
+    <div class="top-bar">
+      <h1 id="logo"><a class="logo" href="/"><span>Swagger</span><span class="light">API Docs</span></a></h1>
+    </div>
+  </div>
+  <div class="model-container"></div>
+  <div class="content">
+    <div class="box clearfix">
+      <div class="sidebar">
+        <div class="section-box">
+          <div class="section-header">
+            Overview
+          </div>
+          <ul>
+            <li>Getting Started</li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/AuthApi">AuthApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/AuthApi#authAuthDisable">authAuthDisable</a></li>
+            <li><a href="#!/AuthApi#authAuthEnable">authAuthEnable</a></li>
+            <li><a href="#!/AuthApi#authAuthStatus">authAuthStatus</a></li>
+            <li><a href="#!/AuthApi#authAuthenticate">authAuthenticate</a></li>
+            <li><a href="#!/AuthApi#authRoleAdd">authRoleAdd</a></li>
+            <li><a href="#!/AuthApi#authRoleDelete">authRoleDelete</a></li>
+            <li><a href="#!/AuthApi#authRoleGet">authRoleGet</a></li>
+            <li><a href="#!/AuthApi#authRoleGrantPermission">authRoleGrantPermission</a></li>
+            <li><a href="#!/AuthApi#authRoleList">authRoleList</a></li>
+            <li><a href="#!/AuthApi#authRoleRevokePermission">authRoleRevokePermission</a></li>
+            <li><a href="#!/AuthApi#authUserAdd">authUserAdd</a></li>
+            <li><a href="#!/AuthApi#authUserChangePassword">authUserChangePassword</a></li>
+            <li><a href="#!/AuthApi#authUserDelete">authUserDelete</a></li>
+            <li><a href="#!/AuthApi#authUserGet">authUserGet</a></li>
+            <li><a href="#!/AuthApi#authUserGrantRole">authUserGrantRole</a></li>
+            <li><a href="#!/AuthApi#authUserList">authUserList</a></li>
+            <li><a href="#!/AuthApi#authUserRevokeRole">authUserRevokeRole</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/ClusterApi">ClusterApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/ClusterApi#clusterMemberAdd">clusterMemberAdd</a></li>
+            <li><a href="#!/ClusterApi#clusterMemberList">clusterMemberList</a></li>
+            <li><a href="#!/ClusterApi#clusterMemberPromote">clusterMemberPromote</a></li>
+            <li><a href="#!/ClusterApi#clusterMemberRemove">clusterMemberRemove</a></li>
+            <li><a href="#!/ClusterApi#clusterMemberUpdate">clusterMemberUpdate</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/KVApi">KVApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/KVApi#kVCompact">kVCompact</a></li>
+            <li><a href="#!/KVApi#kVDeleteRange">kVDeleteRange</a></li>
+            <li><a href="#!/KVApi#kVPut">kVPut</a></li>
+            <li><a href="#!/KVApi#kVRange">kVRange</a></li>
+            <li><a href="#!/KVApi#kVTxn">kVTxn</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/LeaseApi">LeaseApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/LeaseApi#leaseLeaseGrant">leaseLeaseGrant</a></li>
+            <li><a href="#!/LeaseApi#leaseLeaseKeepAlive">leaseLeaseKeepAlive</a></li>
+            <li><a href="#!/LeaseApi#leaseLeaseLeases">leaseLeaseLeases</a></li>
+            <li><a href="#!/LeaseApi#leaseLeaseLeases2">leaseLeaseLeases2</a></li>
+            <li><a href="#!/LeaseApi#leaseLeaseRevoke">leaseLeaseRevoke</a></li>
+            <li><a href="#!/LeaseApi#leaseLeaseRevoke2">leaseLeaseRevoke2</a></li>
+            <li><a href="#!/LeaseApi#leaseLeaseTimeToLive">leaseLeaseTimeToLive</a></li>
+            <li><a href="#!/LeaseApi#leaseLeaseTimeToLive2">leaseLeaseTimeToLive2</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/MaintenanceApi">MaintenanceApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/MaintenanceApi#maintenanceAlarm">maintenanceAlarm</a></li>
+            <li><a href="#!/MaintenanceApi#maintenanceDefragment">maintenanceDefragment</a></li>
+            <li><a href="#!/MaintenanceApi#maintenanceDowngrade">maintenanceDowngrade</a></li>
+            <li><a href="#!/MaintenanceApi#maintenanceHashKV">maintenanceHashKV</a></li>
+            <li><a href="#!/MaintenanceApi#maintenanceMoveLeader">maintenanceMoveLeader</a></li>
+            <li><a href="#!/MaintenanceApi#maintenanceSnapshot">maintenanceSnapshot</a></li>
+            <li><a href="#!/MaintenanceApi#maintenanceStatus">maintenanceStatus</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/WatchApi">WatchApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/WatchApi#watchWatch">watchWatch</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="non-sidebar">
+      <div class="main-content">
+        <h2>Getting Started</h2>
+        <p>To begin using your fancy HTTP API, follow the steps below.</p>
+        <p>You can add some helpful tips, here</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

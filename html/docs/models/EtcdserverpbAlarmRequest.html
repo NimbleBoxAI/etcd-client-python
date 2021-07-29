@@ -1,0 +1,17 @@
+
+<h2>EtcdserverpbAlarmRequest</h2>
+<ul class="parameter">
+  <li class="param-required-false">action : AlarmRequestAlarmAction
+    <br/>action is the kind of alarm request to issue. The action may GET alarm statuses, ACTIVATE an alarm, or DEACTIVATE a raised alarm.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">alarm : etcdserverpbAlarmType
+    <br/>alarm is the type of alarm to consider for this request.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">memberID : String
+    <br/>memberID is the ID of the member associated with the alarm. If memberID is 0, the alarm request covers all members.
+  </li>
+</ul>

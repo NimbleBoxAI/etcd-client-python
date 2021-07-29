@@ -1,0 +1,42 @@
+
+<h2>EtcdserverpbWatchCreateRequest</h2>
+<ul class="parameter">
+  <li class="param-required-false">filters : List
+    <br/>filters filter the events at server side before it sends back to the watcher.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">fragment : Boolean
+    <br/>fragment enables splitting large revisions into multiple watch responses.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">key : byte[]
+    <br/>key is the key to register for watching.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">prev_kv : Boolean
+    <br/>If prev_kv is set, created watcher gets the previous KV before the event happens. If the previous KV is already compacted, nothing will be returned.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">progress_notify : Boolean
+    <br/>progress_notify is set so that the etcd server will periodically send a WatchResponse with no events to the new watcher if there are no recent events. It is useful when clients wish to recover a disconnected watcher starting from a recent known revision. The etcd server may decide how often it will send notifications based on current load.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">range_end : byte[]
+    <br/>range_end is the end of the range [key, range_end) to watch. If range_end is not given, only the key argument is watched. If range_end is equal to &#39;\\0&#39;, all keys greater than or equal to the key argument are watched. If the range_end is one bit larger than the given key, then all keys with the prefix (the given key) will be watched.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">start_revision : String
+    <br/>start_revision is an optional revision to watch from (inclusive). No start_revision is \&quot;now\&quot;.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">watch_id : String
+    <br/>If watch_id is provided and non-zero, it will be assigned to this watcher. Since creating a watcher in etcd is not a synchronous operation, this can be used ensure that ordering is correct when creating multiple watchers on the same stream. Creating a watcher with an ID already in use on the stream will cause an error to be returned.
+  </li>
+</ul>

@@ -1,0 +1,22 @@
+
+<h2>EtcdserverpbResponseHeader</h2>
+<ul class="parameter">
+  <li class="param-required-false">cluster_id : String
+    <br/>cluster_id is the ID of the cluster which sent the response.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">member_id : String
+    <br/>member_id is the ID of the member which sent the response.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">raft_term : String
+    <br/>raft_term is the raft term when the request was applied.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">revision : String
+    <br/>revision is the key-value store revision when the request was applied. For watch progress responses, the header.revision indicates progress. All future events recieved in this stream are guaranteed to have a higher revision number than the header.revision number.
+  </li>
+</ul>

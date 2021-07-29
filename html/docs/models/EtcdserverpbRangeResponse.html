@@ -1,0 +1,22 @@
+
+<h2>EtcdserverpbRangeResponse</h2>
+<ul class="parameter">
+  <li class="param-required-false">count : String
+    <br/>count is set to the number of keys within the range when requested.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">header : etcdserverpbResponseHeader
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">kvs : List
+    <br/>kvs is the list of key-value pairs matched by the range request. kvs is empty when count is requested.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">more : Boolean
+    <br/>more indicates if there are more keys to return in the requested range.
+  </li>
+</ul>

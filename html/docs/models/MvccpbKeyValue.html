@@ -1,0 +1,32 @@
+
+<h2>MvccpbKeyValue</h2>
+<ul class="parameter">
+  <li class="param-required-false">create_revision : String
+    <br/>create_revision is the revision of last creation on this key.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">key : byte[]
+    <br/>key is the key in bytes. An empty key is not allowed.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">lease : String
+    <br/>lease is the ID of the lease that attached to key. When the attached lease expires, the key will be deleted. If lease is 0, then no lease is attached to the key.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">mod_revision : String
+    <br/>mod_revision is the revision of last modification on this key.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">value : byte[]
+    <br/>value is the value held by the key, in bytes.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">version : String
+    <br/>version is the version of the key. A deletion resets the version to zero and any modification of the key increases its version.
+  </li>
+</ul>
